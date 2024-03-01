@@ -1,0 +1,53 @@
+# Your code below:
+print("Len's Slice\n240 W Kentucky Rd\nWooster, OH 44691\n(330)706-9767", end ="\n\n")
+
+toppings = ["pepperoni", "pineapple", "cheese", "sausage", "olives", "anchovies", "mushrooms"]
+
+print("Toppings")
+print(toppings, end ="\n\n")
+
+prices = [2, 6, 1, 3, 2, 7, 2]
+
+print("Prices")
+print(prices, end ="\n\n")
+
+num_two_dollar_slices = prices.count(2) 
+print("Number of times $2 occurs")
+print(num_two_dollar_slices, end ="\n\n")
+
+num_pizzas = len(toppings)
+print("Number of toppings")
+print(num_pizzas, end ="\n\n")
+
+print("We sell", num_pizzas, "different kinds of pizza!", end ="\n\n")
+
+pizza_and_prices = [[2, "pepperoni"], [6, "pineapple"], [1, "cheese"], [3, "sausage"], [2, "olives"], [7, "anchovies"], [2, "mushrooms"]]
+
+print("Menu")
+pizza_and_prices.sort()
+print(pizza_and_prices, end ="\n\n")
+
+cheapest_pizza = pizza_and_prices[0]
+print("Cheapest Pizza")
+print(cheapest_pizza, end ="\n\n")
+
+#A man walks into the pizza store and shouts, "I will have your MOST EXPENSIVE pizza!
+
+priciest_pizza = pizza_and_prices[-1]
+print("Priciest Pizza")
+print(priciest_pizza, end ="\n\n")
+
+pizza_and_prices.pop(-1)
+print(" ")
+
+pizza_and_prices.insert(4,(2.5, "peppers"))
+
+print("Updated menu with NEW ITEM")
+print(pizza_and_prices, end ="\n\n")
+
+# Three mice walk into the store. They don’t have much money (they’re mice), but they do each want different pizzas.
+
+three_cheapest = pizza_and_prices[:3]
+print("Three Cheapest Pizzas")
+print(three_cheapest)
+
